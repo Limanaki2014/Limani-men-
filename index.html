@@ -46,22 +46,22 @@ background-size: cover;
     @media (min-width: 520px){ .buttons{ grid-template-columns: 1fr 1fr; } }
     .btn {
   display: inline-block;
-  background: rgba(64, 179, 77, 0.85); /* Olivegrün, leicht transparent */
-  color: #fff;
-  padding: 10px 18px;  /* kleiner als vorher */
-  font-size: 16px;     /* kleinere Schrift */
+  background: rgba(247, 247, 244, 0.85); /* Beige-Creme + 85% Deckkraft */
+  color: var(--olive);                   /* Schrift in Olivegrün (passt zu Logo/Farben) */
+  padding: 10px 20px;                    /* oben/unten 10px, links/rechts 20px */
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 25px; /* macht sie runder */
-  margin: 8px;         /* etwas Abstand */
+  border-radius: 25px;
+  margin: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* dezenter Schatten */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .btn:hover {
-  background: rgba(64, 179, 77, 1); /* kräftiger beim Hover */
-  transform: translateY(-2px);      /* hebt sich leicht an */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+  background: rgba(247, 247, 244, 1);    /* beim Hover etwas kräftiger */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
     .btn-outline:hover{ border-color:var(--olive-dark); color:var(--olive-dark); }
     .footer{ margin-top:22px; font-size:12px; color:#8a8a8a }
